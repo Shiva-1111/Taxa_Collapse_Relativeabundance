@@ -6,7 +6,7 @@ This repository documents the workflow for taxonomy-level collapsing and relativ
 
 ## Aim: To collapse the feature table from ASV level into taxonomic levels from **Kingdom (L1)** to **Species (L7)**.
 
-The `feature-table.qza` contains **absolute counts** of ASVs, and the `taxonomy.qza` file contains their corresponding taxonomic annotations.  
+The `filtered-table-dada.qza` contains **absolute counts** of ASVs, and the `filtered-taxonomy.qza` file contains their corresponding taxonomic annotations.  
 For each level (L1–L7), the workflow:
 
 1. Collapses absolute counts to the selected taxonomic rank  
