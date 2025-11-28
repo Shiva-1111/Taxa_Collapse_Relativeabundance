@@ -4,13 +4,16 @@ This repository documents the workflow for taxonomy-level collapsing and relativ
 
 ---
 
-## Steps Overview
-1. **Collapse feature table by taxonomic level (1–7)**
-2. **Generate relative frequency tables**
-3. **Export `.biom` files and convert to `.tsv` and `.csv`**
-4. **Obtain level-wise relative abundance data for downstream analysis**
+## Aim: To collapse the feature table from ASV level into taxonomic levels from **Kingdom (L1)** to **Species (L7)**.
 
----
+The `feature-table.qza` contains **absolute counts** of ASVs, and the `taxonomy.qza` file contains their corresponding taxonomic annotations.  
+For each level (L1–L7), the workflow:
+
+1. Collapses absolute counts to the selected taxonomic rank  
+2. Converts the collapsed table to **relative abundance**  
+3. Exports the table as `.biom` → `.tsv` → `.csv` for downstream analysis  
+
+--
 
 # Collapse level 1 - Kingdom
 time qiime taxa collapse \
